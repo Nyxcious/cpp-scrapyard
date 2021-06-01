@@ -331,5 +331,76 @@ while (n > 0)
 //	j = j + char_array[i];
 //}
 //cout << j << endl;
+	
+	/*for (int n = 5; n >= 1; n--) {
+		for (int i = 1; i < n; i++) {
+			cout << " ";
+		}
+		for (int j = 5; j >= n; j--) {
+			cout << "*";
+		}
+		cout << endl;
+	}*/
+
+	/*for (int n = 1; n <= 5; n++) {
+		for (int i = 1; i <n ; i++) {
+			cout << " ";
+		}
+		for (int j = 5; j>= n; j--) {
+			cout << "*";
+		}
+		cout << endl;
+	}*/
+
+	/*for (int n = 1; n <= 5; n++) {
+		for (int i = 1; i <= n; i++) {
+			cout << " ";
+		}
+		for (int j = 1; j <= 5; j++) { cout << "*"; }
+		cout << endl;
+	}*/
+
+	// Matrix Multiplication 
+
+	//int a[10][10], b[10][10], mul[10][10], r, c, i, j, k;
+
+	//cout << "Enter the number of rows : " << endl;
+	//cin >> r;
+	//cout << "Enter the number of coloumns : " << endl;
+	//cin >> c;
+	//cout << "Enter First Matrix : " << endl;
+
+	//for (i = 0; i < r; i++) {
+
+	//	for (j = 0; j < c; j++) {
+	//		cin >> a[i][j];
+	//	}
+	//}
+	//cout << "Enter Second Matrix : " << endl;
+
+	//for (i = 0; i < r; i++) {
+
+	//	for (j = 0; j < c; j++) {
+	//		cin >> b[i][j];
+	//	}
+	//}
+	//cout << "Multiply of the Matrices :" << endl;
+	//for (i = 0; i < r; i++) {
+	//	for (j = 0; j < c;j++) {
+	//		mul[i][j] = 0;
+	//		for (k = 0; k < c; k++) {
+	//			mul[i][j] = a[i][j] * b[k][j];
+	//		}
+	//	}
+	//}
+
+	//// TO print result : 
+
+	//for (i = 0; i < r; i++) {
+	//	for (j = 0; j < c; j++) {
+	//		cout <<mul[i][j]<<" ";
+	//	}
+	//	cout << "\n";
+	//}
 
 }
