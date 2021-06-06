@@ -327,5 +327,59 @@ int main()
 			cout << "Do you want to Go Again : (Y/N)?";
 		cin >> selection;
 	} while (selection == 'y' || selection =='Y');
-return 0;*/
+
+
+// Cipher Message Program
+//string alphabet{ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" };
+//string key{ "XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr" };
+//
+//string message{};
+//
+//cout << "Enter the messge :" << endl;
+//getline(cin, message);
+//
+//cout << "Encrpyting the Message :" << endl;
+//
+//string encrypted_message{};
+//
+//for (char c : message) {
+//
+//	size_t positon = alphabet.find(c);
+//	if (positon != string::npos) {
+//		char new_char{key.at(positon)};
+//		encrypted_message += new_char;
+//		
+//	}
+//	else {
+//		encrypted_message += c;
+//	}
+//	
+//}
+//cout << encrypted_message << endl;
+//cout << "Decrypting the Message : " << endl;
+//
+//string decrypted_message{};
+//
+//for (char a : encrypted_message) {
+//
+//	size_t pos = key.find(a);
+//	if (pos != string::npos) {
+//		char dec_char{ alphabet.at(pos) };
+//		decrypted_message += dec_char;
+//		
+//
+//	}
+//	else {
+//	
+//		decrypted_message += a;
+//
+//	}
+//
+//}
+//
+//cout << decrypted_message << endl;
+//
+//
+//
+//return 0;
 }
