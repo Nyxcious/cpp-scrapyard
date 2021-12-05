@@ -368,9 +368,6 @@ int main() {
 }
 
 
-#include <iostream>
-using namespace std;
-
 
 Problem 9 :
 Write a program that performs the addition of minimum 2 numbers and maximum 10 numbers. The program should have a user-defined function for this purpose. That function will accept max 10 numbers and min 2 numbers in parameter and then return their sum. For example if I pass 2 parameters to this function, it should return sum of two digits. If I pass 7 digits, it should return sum of 7 digits and vice versa. 
