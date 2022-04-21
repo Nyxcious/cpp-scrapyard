@@ -73,6 +73,21 @@ int main() {
 
 	cout << endl;
 
+//Isprime
+
+	int array1[10];
+	int temp;
+	for (int i = 0; i < 10; i++) {
+	temp = 1;
+	for (int j = 2; j <= array1[i] / 2; j++) {
+	if (array1[i] % j == 0) {
+		temp = 5;
+		break;
+		}
+	}
+	if (temp == 1)
+		cout << array1[i] << endl;
+	}
 //Reversing using secondary array
 
 
@@ -96,6 +111,20 @@ int main() {
 	}
 	cout << endl;
 
+	
+// Sum of elements 
+
+	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int sum = 0;
+	
+	for (int i = 0; i < 10; i++) {
+		sum += a[i];
+	}
+	cout <<"The total sum of elements is : "<< sum;
+	
+	return 0;
+	
+	
 //Reversing using no array
 
 	int array[10] = { 1,2,3,4,5,6,7,8,9,10 };
