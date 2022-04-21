@@ -1,0 +1,86 @@
+#include<iostream>
+#define SIZE 10
+using namespace std;
+class Queue {
+	int array[SIZE];
+	int front, rear;
+public:
+	Queue() {
+		front = rear = -1;
+	}
+	bool isEmpty() {
+		if (front == -1)
+			return true;
+		else
+			return false;
+	}
+	bool isFull() {
+		if (rear == SIZE - 1)
+			return true;
+		else
+			return false;
+	}
+	void push(int value) {
+		if (isFull()) {
+			cout << "Stack Overflow Occured\n";
+			return;
+		}
+		if (isEmpty()) {
+			front = rear = 0;
+			array[rear] = value;
+			cout << value << " Pushed successfully\n";
+		}
+		else {
+			rear++;
+			array[rear] = value;
+			cout << value << " Pushes successfully\n";
+		}
+	}
+	void pop() {
+		if (isEmpty()) {
+			cout << "Stack Underflow Occured\n";
+			return;
+		}
+		if (front == rear) {
+			cout << array[front] << "Popped successfullt\n";
+			front = rear = -1;
+		}
+		else {
+			cout << array[front] << " Popped successfullt\n";
+			front++;
+		}
+	}
+	int getTop() {
+		if (isEmpty())
+			cout << "Stack Underflow\n";
+		else
+			return array[rear];
+	}
+	void Display() {
+		if (isEmpty())
+			cout << "Stack Underflow\n";
+		else {
+			cout << "Stack elements are: ";
+			for (int i = front; i <= rear; i++) {
+				cout << array[i] << " ";
+			}
+			cout << endl;
+		}
+	}
+};
+int main() {
+	Queue list;
+	list.pop();
+	list.push(10);
+	list.push(20);
+	list.push(30);
+	list.pop();
+	cout << "Top is " << list.getTop() << endl;
+	list.Display();
+	list.push(40);
+	list.push(50);
+	list.Display();
+	cout << "Top is " << list.getTop() << endl;
+	list.pop();
+	list.Display();
+}
