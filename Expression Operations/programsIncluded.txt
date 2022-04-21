@@ -1,0 +1,13 @@
+You are supposed to write the following programs.
+
+1. Write a program that inputs an infix expression and displays number of operands and operators in that expression. (ignore the spaces if any)
+
+2. Write a program that inputs an infix expression and displays the number of braces in the expression. (Count the braces as a pair e.g. starting and
+ ending brace is 1 pair and has count of 1.) (ignore the spaces if any)
+
+3. Write a program that inputs an infix expression. The program should display if the given expression is balanced or not. (ignore the spaces if any)
+
+4. Write a program that inputs an infix expression. The program should convert it to postfix expression and display the result. (ignore the spaces if any)
+
+5. Write a program that inputs a postfix expression. If the expression contain any variable as operand then input the value for that operand. The program 
+should then display the result of postfix expression. (ignore the spaces if a
